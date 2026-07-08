@@ -1,0 +1,1 @@
+function outer(){let x=10;return ()=>x;}console.log(outer()());(function(){console.log('IIFE');})();

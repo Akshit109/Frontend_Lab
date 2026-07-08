@@ -1,0 +1,11 @@
+<!doctype html>
+
+<head>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+</head>
+
+<body>
+    <button id='show'>Show</button><button id='hide'>Hide</button>
+    <form id='f' style='display:none'><input placeholder='Username'><input type='password'><button>Login</button></form>
+    <script>$('#show').click(() => $('#f').fadeIn()); $('#hide').click(() => $('#f').fadeOut());</script>
+</body>

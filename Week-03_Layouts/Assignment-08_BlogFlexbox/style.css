@@ -1,0 +1,16 @@
+.c {
+    display: flex;
+    gap: 10px
+}
+
+.c div {
+    flex: 1;
+    background: #ddd;
+    padding: 20px
+}
+
+@media(max-width:600px) {
+    .c {
+        flex-direction: column
+    }
+}

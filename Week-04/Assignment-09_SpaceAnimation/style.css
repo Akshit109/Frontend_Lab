@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background: #000;
+    overflow: hidden
+}
+
+.rocket,
+.astro {
+    position: absolute;
+    font-size: 48px;
+    animation: fly 5s linear infinite
+}
+
+.astro {
+    top: 60%;
+    animation-delay: 1s
+}
+
+@keyframes fly {
+    from {
+        left: -10%
+    }
+
+    to {
+        left: 110%
+    }
+}

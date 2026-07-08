@@ -1,0 +1,9 @@
+<!doctype html>
+
+<body><img id='main' src='https://via.placeholder.com/300'><br>
+    <div id='thumbs'><img src='https://via.placeholder.com/100/ff0000'><img
+            src='https://via.placeholder.com/100/00ff00'><img src='https://via.placeholder.com/100/0000ff'></div>
+    <script>
+        thumbs.addEventListener('click', e => { if (e.target.tagName === 'IMG') main.src = e.target.src.replace('/100', '/300'); });
+    </script>
+</body>

@@ -1,0 +1,28 @@
+body {
+    background: hsl(210, 50%, 95%)
+}
+
+h1 {
+    color: #3366cc
+}
+
+.box {
+    background: rgb(240, 240, 255);
+    padding: 20px
+}
+
+#about {
+    border: 2px solid rgba(0, 0, 255, .4)
+}
+
+p[data-role] {
+    color: #444
+}
+
+.box:hover {
+    transform: scale(1.02)
+}
+
+p::first-letter {
+    font-size: 2em
+}

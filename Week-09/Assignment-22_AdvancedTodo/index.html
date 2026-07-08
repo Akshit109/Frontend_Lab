@@ -1,0 +1,20 @@
+<!doctype html>
+
+<body>
+    <input id=t><button onclick='add()'>Add</button>
+    <ul id=l></ul>
+    <script>
+        function add() {
+            let li = document.createElement('li');
+            let c = document.createElement('input'); c.type = 'checkbox';
+            let s = document.createElement('span'); s.textContent = t.value + ' ';
+            let up = document.createElement('button'); up.textContent = '↑';
+            let down = document.createElement('button'); down.textContent = '↓';
+            let del = document.createElement('button'); del.textContent = 'X';
+            up.onclick = () => li.previousElementSibling && li.parentNode.insertBefore(li, li.previousElementSibling);
+            down.onclick = () => li.nextElementSibling && li.parentNode.insertBefore(li.nextElementSibling, li);
+            del.onclick = () => li.remove();
+            li.append(c, s, up, down, del); l.append(li); t.value = '';
+        }
+    </script>
+</body>

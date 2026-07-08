@@ -1,0 +1,8 @@
+<!doctype html>
+
+<body><input id=t><button onclick='add()'>Add</button>
+    <ul id=l></ul>
+    <script>
+        function add() { let li = document.createElement('li'); li.textContent = t.value + ' '; let b = document.createElement('button'); b.textContent = 'Delete'; b.onclick = () => li.remove(); li.appendChild(b); l.appendChild(li); t.value = ''; }
+    </script>
+</body>

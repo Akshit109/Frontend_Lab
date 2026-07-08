@@ -1,0 +1,13 @@
+<!doctype html>
+
+<body>
+    <input id='c' placeholder='Country'><button onclick='go()'>Search</button>
+    <ul id='r'></ul>
+    <script>
+        async function go() {
+            const res = await fetch('https://universities.hipolabs.com/search?country=' + encodeURIComponent(c.value));
+            const data = await res.json(); r.innerHTML = '';
+            data.forEach(u => r.innerHTML += `<li><b>${u.name}</b><br>${u.web_pages[0]}<br>${u.state_province || 'N/A'}</li>`);
+        }
+    </script>
+</body>

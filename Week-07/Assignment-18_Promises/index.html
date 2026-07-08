@@ -1,0 +1,8 @@
+<!doctype html>
+
+<body><button onclick='load()'>Fetch</button>
+    <p id='o'></p>
+    <script>
+        function load() { o.textContent = 'Loading...'; new Promise(r => setTimeout(() => r('Data received from server'), 2000)).then(v => o.textContent = v); }
+    </script>
+</body>

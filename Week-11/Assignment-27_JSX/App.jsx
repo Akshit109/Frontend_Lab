@@ -1,0 +1,1 @@
+const name = 'Akshit'; export default function App() { return <h2>Hello {name}! {2 + 3}</h2> }

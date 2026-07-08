@@ -1,0 +1,1 @@
+export default function Card({ image, title, description }) { return (<div><img src={image} width='150' /><h3>{title}</h3><p>{description}</p></div>) }
